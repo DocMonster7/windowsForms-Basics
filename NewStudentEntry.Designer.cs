@@ -38,15 +38,15 @@
             this.lbStudentLastName = new System.Windows.Forms.Label();
             this.tbStudentLastName = new System.Windows.Forms.TextBox();
             this.plStudentBasicDetails = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbSex = new System.Windows.Forms.ComboBox();
             this.lbGender = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbState = new System.Windows.Forms.ComboBox();
+            this.tbContactNumber = new System.Windows.Forms.TextBox();
+            this.tbPIN = new System.Windows.Forms.TextBox();
+            this.tbCity = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbStreet = new System.Windows.Forms.TextBox();
             this.lbStreet = new System.Windows.Forms.Label();
             this.lbCity = new System.Windows.Forms.Label();
             this.lbState = new System.Windows.Forms.Label();
@@ -141,7 +141,7 @@
             // 
             // plStudentBasicDetails
             // 
-            this.plStudentBasicDetails.Controls.Add(this.comboBox1);
+            this.plStudentBasicDetails.Controls.Add(this.cbSex);
             this.plStudentBasicDetails.Controls.Add(this.lbGender);
             this.plStudentBasicDetails.Controls.Add(this.lbStudentFirstName);
             this.plStudentBasicDetails.Controls.Add(this.tbStudentLastName);
@@ -154,17 +154,17 @@
             this.plStudentBasicDetails.Size = new System.Drawing.Size(470, 164);
             this.plStudentBasicDetails.TabIndex = 13;
             // 
-            // comboBox1
+            // cbSex
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbSex.FormattingEnabled = true;
+            this.cbSex.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(219, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
+            this.cbSex.Location = new System.Drawing.Point(219, 111);
+            this.cbSex.Name = "cbSex";
+            this.cbSex.Size = new System.Drawing.Size(121, 21);
+            this.cbSex.TabIndex = 14;
             // 
             // lbGender
             // 
@@ -178,12 +178,12 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.cbState);
+            this.panel1.Controls.Add(this.tbContactNumber);
+            this.panel1.Controls.Add(this.tbPIN);
+            this.panel1.Controls.Add(this.tbCity);
+            this.panel1.Controls.Add(this.tbEmail);
+            this.panel1.Controls.Add(this.tbStreet);
             this.panel1.Controls.Add(this.lbStreet);
             this.panel1.Controls.Add(this.lbCity);
             this.panel1.Controls.Add(this.lbState);
@@ -195,10 +195,10 @@
             this.panel1.Size = new System.Drawing.Size(470, 146);
             this.panel1.TabIndex = 14;
             // 
-            // comboBox2
+            // cbState
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbState.FormattingEnabled = true;
+            this.cbState.Items.AddRange(new object[] {
             "Andhra Pradesh (AP)",
             "Arunachal Pradesh (AR)",
             "Assam (AS)",
@@ -235,45 +235,45 @@
             "National Capital Territory of Delhi (DL)",
             "Lakshadweep (LD)",
             "Pondicherry (PY)"});
-            this.comboBox2.Location = new System.Drawing.Point(111, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(105, 21);
-            this.comboBox2.TabIndex = 15;
+            this.cbState.Location = new System.Drawing.Point(111, 45);
+            this.cbState.Name = "cbState";
+            this.cbState.Size = new System.Drawing.Size(105, 21);
+            this.cbState.TabIndex = 15;
             // 
-            // textBox5
+            // tbContactNumber
             // 
-            this.textBox5.Location = new System.Drawing.Point(152, 108);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(146, 20);
-            this.textBox5.TabIndex = 24;
+            this.tbContactNumber.Location = new System.Drawing.Point(152, 108);
+            this.tbContactNumber.Name = "tbContactNumber";
+            this.tbContactNumber.Size = new System.Drawing.Size(146, 20);
+            this.tbContactNumber.TabIndex = 24;
             // 
-            // textBox4
+            // tbPIN
             // 
-            this.textBox4.Location = new System.Drawing.Point(274, 41);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 23;
+            this.tbPIN.Location = new System.Drawing.Point(274, 41);
+            this.tbPIN.Name = "tbPIN";
+            this.tbPIN.Size = new System.Drawing.Size(100, 20);
+            this.tbPIN.TabIndex = 23;
             // 
-            // textBox3
+            // tbCity
             // 
-            this.textBox3.Location = new System.Drawing.Point(273, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 22;
+            this.tbCity.Location = new System.Drawing.Point(273, 15);
+            this.tbCity.Name = "tbCity";
+            this.tbCity.Size = new System.Drawing.Size(100, 20);
+            this.tbCity.TabIndex = 22;
             // 
-            // textBox2
+            // tbEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(111, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 21;
+            this.tbEmail.Location = new System.Drawing.Point(111, 75);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(187, 20);
+            this.tbEmail.TabIndex = 21;
             // 
-            // textBox1
+            // tbStreet
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 20;
+            this.tbStreet.Location = new System.Drawing.Point(111, 15);
+            this.tbStreet.Name = "tbStreet";
+            this.tbStreet.Size = new System.Drawing.Size(100, 20);
+            this.tbStreet.TabIndex = 20;
             // 
             // lbStreet
             // 
@@ -344,6 +344,7 @@
             this.btResetStudentData.TabIndex = 15;
             this.btResetStudentData.Text = "Reset";
             this.btResetStudentData.UseVisualStyleBackColor = true;
+            this.btResetStudentData.Click += new System.EventHandler(this.btResetStudentData_Click);
             // 
             // NewStudentEntry
             // 
@@ -380,15 +381,15 @@
         private System.Windows.Forms.Label lbStudentLastName;
         private System.Windows.Forms.TextBox tbStudentLastName;
         private System.Windows.Forms.Panel plStudentBasicDetails;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbSex;
         private System.Windows.Forms.Label lbGender;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbState;
+        private System.Windows.Forms.TextBox tbContactNumber;
+        private System.Windows.Forms.TextBox tbPIN;
+        private System.Windows.Forms.TextBox tbCity;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbStreet;
         private System.Windows.Forms.Label lbStreet;
         private System.Windows.Forms.Label lbCity;
         private System.Windows.Forms.Label lbState;
