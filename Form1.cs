@@ -46,5 +46,10 @@ namespace StudentApp_WindowsForm_Version
             }
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,9 +25,9 @@ namespace StudentApp_WindowsForm_Version
             if (this.flag == 1)
             {
                 this.studentList = 1;
-                lbStudentName.Visible = true;
+                lbStudentFirstName.Visible = true;
                 lbStudentDOB.Visible = true;
-                tbStudentName.Visible = true;
+                tbStudentFirstName.Visible = true;
                 dtpStudentDOB.Visible = true;
                 btSubmitStudentData.Visible = true;
 
@@ -48,9 +48,9 @@ namespace StudentApp_WindowsForm_Version
             if (digits.IsMatch(tbStudentEntry.Text))
             {
                 this.studentList = int.Parse(tbStudentEntry.Text);
-                lbStudentName.Visible = true;
+                lbStudentFirstName.Visible = true;
                 lbStudentDOB.Visible = true;
-                tbStudentName.Visible = true;
+                tbStudentFirstName.Visible = true;
                 dtpStudentDOB.Visible = true;
                 btSubmitStudentData.Visible = true;
 
@@ -70,7 +70,7 @@ namespace StudentApp_WindowsForm_Version
 
             while (this.entryCount <= this.studentList)
             {
-                string studentName = tbStudentName.Text;
+                string studentName = tbStudentFirstName.Text;
                 DateTime dateOfBirth = dtpStudentDOB.Value;
 
                 //MessageBox.Show(studentName + " " + dateOfBirth.ToString("d"));
@@ -81,7 +81,7 @@ namespace StudentApp_WindowsForm_Version
                 lbCounter.Visible = true;
                 lbCounter.Text = "Remaining Students are" + (this.studentList - this.entryCount);
 
-                tbStudentName.Text = "";
+                tbStudentFirstName.Text = "";
 
                 break;
 
@@ -130,6 +130,11 @@ namespace StudentApp_WindowsForm_Version
         private void viewAllStudentsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             
+
+        }
+
+        private void lbCounter_Click(object sender, EventArgs e)
+        {
 
         }
 
