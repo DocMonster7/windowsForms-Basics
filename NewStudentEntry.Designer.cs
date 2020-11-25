@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newStudentSingleEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newStudentMultipleEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewExistingStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbStudentFirstName = new System.Windows.Forms.Label();
             this.tbStudentFirstName = new System.Windows.Forms.TextBox();
             this.lbStudentDOB = new System.Windows.Forms.Label();
@@ -42,68 +38,33 @@
             this.lbStudentLastName = new System.Windows.Forms.Label();
             this.tbStudentLastName = new System.Windows.Forms.TextBox();
             this.plStudentBasicDetails = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lbGender = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btResetStudentData = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lbEmail = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbPIN = new System.Windows.Forms.Label();
-            this.lbState = new System.Windows.Forms.Label();
-            this.lbCity = new System.Windows.Forms.Label();
-            this.lbStreet = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.menuStrip1.SuspendLayout();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbStreet = new System.Windows.Forms.Label();
+            this.lbCity = new System.Windows.Forms.Label();
+            this.lbState = new System.Windows.Forms.Label();
+            this.lbPIN = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.btResetStudentData = new System.Windows.Forms.Button();
             this.plStudentBasicDetails.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(706, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newStudentSingleEntryToolStripMenuItem,
-            this.newStudentMultipleEntryToolStripMenuItem,
-            this.viewExistingStudentToolStripMenuItem});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
-            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
-            // 
-            // newStudentSingleEntryToolStripMenuItem
-            // 
-            this.newStudentSingleEntryToolStripMenuItem.Name = "newStudentSingleEntryToolStripMenuItem";
-            this.newStudentSingleEntryToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.newStudentSingleEntryToolStripMenuItem.Text = "New Student(Single Entry)";
-            this.newStudentSingleEntryToolStripMenuItem.Click += new System.EventHandler(this.newStudentSingleEntryToolStripMenuItem_Click_1);
-            // 
-            // newStudentMultipleEntryToolStripMenuItem
-            // 
-            this.newStudentMultipleEntryToolStripMenuItem.Name = "newStudentMultipleEntryToolStripMenuItem";
-            this.newStudentMultipleEntryToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.newStudentMultipleEntryToolStripMenuItem.Text = "New Student(Multiple Entry)";
-            this.newStudentMultipleEntryToolStripMenuItem.Click += new System.EventHandler(this.newStudentMultipleEntryToolStripMenuItem_Click_1);
-            // 
-            // viewExistingStudentToolStripMenuItem
-            // 
-            this.viewExistingStudentToolStripMenuItem.Name = "viewExistingStudentToolStripMenuItem";
-            this.viewExistingStudentToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.viewExistingStudentToolStripMenuItem.Text = "View Existing Student";
-            this.viewExistingStudentToolStripMenuItem.Click += new System.EventHandler(this.viewExistingStudentToolStripMenuItem_Click_1);
             // 
             // lbStudentFirstName
             // 
@@ -114,7 +75,6 @@
             this.lbStudentFirstName.Size = new System.Drawing.Size(151, 20);
             this.lbStudentFirstName.TabIndex = 3;
             this.lbStudentFirstName.Text = " Student First Name";
-            this.lbStudentFirstName.Visible = false;
             // 
             // tbStudentFirstName
             // 
@@ -122,7 +82,6 @@
             this.tbStudentFirstName.Name = "tbStudentFirstName";
             this.tbStudentFirstName.Size = new System.Drawing.Size(100, 20);
             this.tbStudentFirstName.TabIndex = 4;
-            this.tbStudentFirstName.Visible = false;
             // 
             // lbStudentDOB
             // 
@@ -133,7 +92,6 @@
             this.lbStudentDOB.Size = new System.Drawing.Size(102, 20);
             this.lbStudentDOB.TabIndex = 5;
             this.lbStudentDOB.Text = "Date Of Birth";
-            this.lbStudentDOB.Visible = false;
             // 
             // dtpStudentDOB
             // 
@@ -142,7 +100,6 @@
             this.dtpStudentDOB.Size = new System.Drawing.Size(200, 20);
             this.dtpStudentDOB.TabIndex = 6;
             this.dtpStudentDOB.Value = new System.DateTime(1997, 9, 7, 0, 0, 0, 0);
-            this.dtpStudentDOB.Visible = false;
             // 
             // lbTitle
             // 
@@ -163,7 +120,6 @@
             this.btSubmitStudentData.TabIndex = 8;
             this.btSubmitStudentData.Text = "Submit";
             this.btSubmitStudentData.UseVisualStyleBackColor = true;
-            this.btSubmitStudentData.Visible = false;
             this.btSubmitStudentData.Click += new System.EventHandler(this.btSubmitStudentData_Click);
             // 
             // lbStudentLastName
@@ -175,7 +131,6 @@
             this.lbStudentLastName.Size = new System.Drawing.Size(147, 20);
             this.lbStudentLastName.TabIndex = 11;
             this.lbStudentLastName.Text = "Student Last Name";
-            this.lbStudentLastName.Visible = false;
             // 
             // tbStudentLastName
             // 
@@ -183,7 +138,6 @@
             this.tbStudentLastName.Name = "tbStudentLastName";
             this.tbStudentLastName.Size = new System.Drawing.Size(100, 20);
             this.tbStudentLastName.TabIndex = 12;
-            this.tbStudentLastName.Visible = false;
             // 
             // plStudentBasicDetails
             // 
@@ -200,6 +154,18 @@
             this.plStudentBasicDetails.Size = new System.Drawing.Size(470, 164);
             this.plStudentBasicDetails.TabIndex = 13;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.comboBox1.Location = new System.Drawing.Point(219, 111);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
             // lbGender
             // 
             this.lbGender.AutoSize = true;
@@ -209,7 +175,6 @@
             this.lbGender.Size = new System.Drawing.Size(36, 20);
             this.lbGender.TabIndex = 13;
             this.lbGender.Text = "Sex";
-            this.lbGender.Visible = false;
             // 
             // panel1
             // 
@@ -229,135 +194,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(470, 146);
             this.panel1.TabIndex = 14;
-            // 
-            // btResetStudentData
-            // 
-            this.btResetStudentData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btResetStudentData.Location = new System.Drawing.Point(368, 384);
-            this.btResetStudentData.Name = "btResetStudentData";
-            this.btResetStudentData.Size = new System.Drawing.Size(119, 38);
-            this.btResetStudentData.TabIndex = 15;
-            this.btResetStudentData.Text = "Reset";
-            this.btResetStudentData.UseVisualStyleBackColor = true;
-            this.btResetStudentData.Visible = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(219, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // lbEmail
-            // 
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(21, 73);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(53, 20);
-            this.lbEmail.TabIndex = 14;
-            this.lbEmail.Text = "E-Mail";
-            this.lbEmail.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 20);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Contact Number";
-            this.label2.Visible = false;
-            // 
-            // lbPIN
-            // 
-            this.lbPIN.AutoSize = true;
-            this.lbPIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPIN.Location = new System.Drawing.Point(233, 43);
-            this.lbPIN.Name = "lbPIN";
-            this.lbPIN.Size = new System.Drawing.Size(35, 20);
-            this.lbPIN.TabIndex = 16;
-            this.lbPIN.Text = "PIN";
-            this.lbPIN.Visible = false;
-            // 
-            // lbState
-            // 
-            this.lbState.AutoSize = true;
-            this.lbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbState.Location = new System.Drawing.Point(21, 43);
-            this.lbState.Name = "lbState";
-            this.lbState.Size = new System.Drawing.Size(48, 20);
-            this.lbState.TabIndex = 17;
-            this.lbState.Text = "State";
-            this.lbState.Visible = false;
-            // 
-            // lbCity
-            // 
-            this.lbCity.AutoSize = true;
-            this.lbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCity.Location = new System.Drawing.Point(232, 13);
-            this.lbCity.Name = "lbCity";
-            this.lbCity.Size = new System.Drawing.Size(35, 20);
-            this.lbCity.TabIndex = 18;
-            this.lbCity.Text = "City";
-            this.lbCity.Visible = false;
-            // 
-            // lbStreet
-            // 
-            this.lbStreet.AutoSize = true;
-            this.lbStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStreet.Location = new System.Drawing.Point(21, 13);
-            this.lbStreet.Name = "lbStreet";
-            this.lbStreet.Size = new System.Drawing.Size(53, 20);
-            this.lbStreet.TabIndex = 19;
-            this.lbStreet.Text = "Street";
-            this.lbStreet.Visible = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(111, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.Visible = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(111, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 21;
-            this.textBox2.Visible = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(273, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 22;
-            this.textBox3.Visible = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(274, 41);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 23;
-            this.textBox4.Visible = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(152, 108);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(146, 20);
-            this.textBox5.TabIndex = 24;
-            this.textBox5.Visible = false;
             // 
             // comboBox2
             // 
@@ -404,6 +240,111 @@
             this.comboBox2.Size = new System.Drawing.Size(105, 21);
             this.comboBox2.TabIndex = 15;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(152, 108);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(146, 20);
+            this.textBox5.TabIndex = 24;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(274, 41);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 23;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(273, 15);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 22;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(111, 75);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(187, 20);
+            this.textBox2.TabIndex = 21;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(111, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 20;
+            // 
+            // lbStreet
+            // 
+            this.lbStreet.AutoSize = true;
+            this.lbStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbStreet.Location = new System.Drawing.Point(21, 13);
+            this.lbStreet.Name = "lbStreet";
+            this.lbStreet.Size = new System.Drawing.Size(53, 20);
+            this.lbStreet.TabIndex = 19;
+            this.lbStreet.Text = "Street";
+            // 
+            // lbCity
+            // 
+            this.lbCity.AutoSize = true;
+            this.lbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCity.Location = new System.Drawing.Point(232, 13);
+            this.lbCity.Name = "lbCity";
+            this.lbCity.Size = new System.Drawing.Size(35, 20);
+            this.lbCity.TabIndex = 18;
+            this.lbCity.Text = "City";
+            // 
+            // lbState
+            // 
+            this.lbState.AutoSize = true;
+            this.lbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbState.Location = new System.Drawing.Point(21, 43);
+            this.lbState.Name = "lbState";
+            this.lbState.Size = new System.Drawing.Size(48, 20);
+            this.lbState.TabIndex = 17;
+            this.lbState.Text = "State";
+            // 
+            // lbPIN
+            // 
+            this.lbPIN.AutoSize = true;
+            this.lbPIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPIN.Location = new System.Drawing.Point(233, 43);
+            this.lbPIN.Name = "lbPIN";
+            this.lbPIN.Size = new System.Drawing.Size(35, 20);
+            this.lbPIN.TabIndex = 16;
+            this.lbPIN.Text = "PIN";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 20);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Contact Number";
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.Location = new System.Drawing.Point(21, 73);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(53, 20);
+            this.lbEmail.TabIndex = 14;
+            this.lbEmail.Text = "E-Mail";
+            // 
+            // btResetStudentData
+            // 
+            this.btResetStudentData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btResetStudentData.Location = new System.Drawing.Point(368, 384);
+            this.btResetStudentData.Name = "btResetStudentData";
+            this.btResetStudentData.Size = new System.Drawing.Size(119, 38);
+            this.btResetStudentData.TabIndex = 15;
+            this.btResetStudentData.Text = "Reset";
+            this.btResetStudentData.UseVisualStyleBackColor = true;
+            // 
             // NewStudentEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,8 +359,6 @@
             this.Name = "NewStudentEntry";
             this.Text = "NewStudentEntry";
             this.Load += new System.EventHandler(this.NewStudentEntry_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.plStudentBasicDetails.ResumeLayout(false);
             this.plStudentBasicDetails.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -432,10 +371,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newStudentSingleEntryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newStudentMultipleEntryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewExistingStudentToolStripMenuItem;
         private System.Windows.Forms.Label lbStudentFirstName;
         private System.Windows.Forms.TextBox tbStudentFirstName;
         private System.Windows.Forms.Label lbStudentDOB;
